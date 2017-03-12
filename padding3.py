@@ -68,7 +68,7 @@ for i in range(15):
     for x,y in zip(ct_list, pt_list):
        endstring = str(triple(x, y, cpad)) + endstring
     pt_list.append(search(ct_list[i], cpad , qstring, endstring))
-    print(pt_list[i], ct_list[i], i)
+    print(pt_list[i], ct_list[i], i, cpad)
     print(qstring)
     print(endstring)
 
