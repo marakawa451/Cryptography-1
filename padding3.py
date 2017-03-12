@@ -50,17 +50,23 @@ def search(ct, pad, rquery, ender):
 def new_endstring(new_pad):
     return str(new_pad) + endstring
 
+def create_pad(nums):
+    if (nums + 1) <= 9:
+        return( "0" + str(nums + 1))
+    else:
+        return(str(nums + 1))
+
 ct_list = []
 pt_list = []
 
-for i in range(10):
+for i in range():
     endstring = '4a61044426fb515dad3f21f18aa577c0'
     ct_list.append(qstring[-2:])
     qstring = qstring[:-2]
     print(endstring)
     for x,y in zip(ct_list, pt_list):
-       endstring = str(triple(x, y, "0" + str(i + 1))) + endstring
-    pt_list.append(search(ct_list[i], "0" + str(i + 1) , qstring, endstring))
+       endstring = str(triple(x, y, create_pad(i)) + endstring
+    pt_list.append(search(ct_list[i], create_pad(i) , qstring, endstring))
     print(pt_list[i], ct_list[i], i)
     print(qstring)
     print(endstring)
