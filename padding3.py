@@ -64,9 +64,10 @@ for i in range():
     ct_list.append(qstring[-2:])
     qstring = qstring[:-2]
     print(endstring)
+    cpad = create_pad(i)
     for x,y in zip(ct_list, pt_list):
-       endstring = str(triple(x, y, create_pad(i) + endstring)
-    pt_list.append(search(ct_list[i], create_pad(i) , qstring, endstring))
+       endstring = str(triple(x, y, (cpad + endstring))
+    pt_list.append(search(ct_list[i], cpad , qstring, endstring))
     print(pt_list[i], ct_list[i], i)
     print(qstring)
     print(endstring)
