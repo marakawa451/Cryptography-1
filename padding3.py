@@ -25,7 +25,7 @@ def triple(ct, pt, pad):
 #       print(str(xora.hex()))
         return (str(xorc.hex()))
 
-pad_range = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16"]
+#pad_range = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16"]
 
 #def compute_pad(ct, pt, pad):
 #         (triple(ct, pt, pad))
@@ -47,11 +47,11 @@ def search(ct, pad, rquery, ender):
 #                print(r.status_code)
                 break
 
-def new_endstring(new_pad):
-    return str(new_pad) + endstring
+#def new_endstring(new_pad):
+#    return str(new_pad) + endstring
 
 def create_pad(nums):
-    if (nums + 1) <= 9:
+    if (nums + 1) < 10:
         return( "0" + str(nums + 1))
     else:
         return(str(nums + 1))
