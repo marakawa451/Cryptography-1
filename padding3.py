@@ -66,7 +66,7 @@ for i in range():
     print(endstring)
     cpad = create_pad(i)
     for x,y in zip(ct_list, pt_list):
-       endstring = str(triple(x, y, (cpad + endstring))
+       endstring = str(triple(x, y, cpad)) + endstring
     pt_list.append(search(ct_list[i], cpad , qstring, endstring))
     print(pt_list[i], ct_list[i], i)
     print(qstring)
