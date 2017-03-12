@@ -7,7 +7,7 @@ allhex = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "0A", "0B"
 allhex = list(map(str, allhex))
 
 #fullstring = 'f20bdba6ff29eed7b046d1df9fb7000058b1ffb4210a580f748b4ac714c001bd4a61044426fb515dad3f21f18aa577c0bdf302936266926ff37dbf7035d5eeb4'
-qstring = 'f20bdba6ff29eed7b046d1df9fb7000058b1ffb4210a580f748b4ac714c001bd'
+qstring = 'f20bdba6ff29eed7b046d1df9fb70000'
 
 
 def splice_ct():
@@ -60,7 +60,7 @@ ct_list = []
 pt_list = []
 
 for i in range(15):
-    endstring = '4a61044426fb515dad3f21f18aa577c0'
+    endstring = '58b1ffb4210a580f748b4ac714c001bd'
     ct_list.append(qstring[-2:])
     qstring = qstring[:-2]
     print(endstring)
